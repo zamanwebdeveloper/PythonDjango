@@ -5,6 +5,24 @@
 </head>
 <body>
 	<h1>My simple webpage</h1>
+	<div>
+		<p>
+			Name : {{ view.name|lower }}
+		</p>
+		<p>
+			Country : {{ view.country }}
+		</p>
+		<p>
+			{% for num in view.list %}
+			{% if num <= 3 %}
+			<h{{ num }}>Life is cool. Be Positive</h{{ num }}>
+			{% else %}
+			<h{{ num }}>Life is difficult</h{{ num }}>
+			{% endif %}
+			
+			{% endfor %}
+		</p>
+	</div>
 
 </body>
 </html>
