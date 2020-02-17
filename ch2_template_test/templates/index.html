@@ -1,10 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>A simple webpage</title>
-</head>
-<body>
-	<h1>My simple webpage</h1>
+{% extends 'base.html' %}
+{% block body%}
+<h1>My simple webpage</h1>
 	<div>
 		<p>
 			Name : {{ view.name|lower }}
@@ -23,6 +19,4 @@
 			{% endfor %}
 		</p>
 	</div>
-
-</body>
-</html>
+{% endblock%}

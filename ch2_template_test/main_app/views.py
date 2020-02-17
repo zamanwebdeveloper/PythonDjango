@@ -7,7 +7,7 @@ class HomeView(TemplateView):
 	list = [1,2,3,4,5]
 
 class AboutView(TemplateView):
-	template_name = "about.htlml"
+	template_name = "about.html"
 
 	# def get_context_data(self, **kwargs):
  #        context = super().get_context_data(**kwargs)
